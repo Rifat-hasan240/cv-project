@@ -1,0 +1,53 @@
+/* common code start */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+.container {
+  background-image: url(images.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* common code end */
+/* container code start */
+.img-1 {
+  border: 5px solid green;
+  border-radius: 50%;
+}
+.container-item {
+  text-align: center;
+  color: white;
+}
+.container-item h1 {
+  text-transform: uppercase;
+  font-style: italic;
+}
+.container-item p {
+  font-size: 1.3rem;
+}
+.container-icon i {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+.container-btn a {
+  color: white;
+  background-color: green;
+  font-size: 1.5rem;
+  padding: 5px;
+  border-radius: 5px;
+}
+.container-btn a:first-child {
+  margin-right: 30px;
+}
+/* container code end */
