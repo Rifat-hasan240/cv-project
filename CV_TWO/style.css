@@ -1,0 +1,187 @@
+/* common code start */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+  outline: 0;
+}
+#container {
+  width: 60%;
+  height: 100%;
+  background-color: #222629;
+  margin: 0 auto;
+}
+h2 {
+  text-transform: uppercase;
+}
+label {
+  color: brown;
+}
+/* common code end */
+/* header code start */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  color: white;
+  font-size: 1.1rem;
+  background-color: #1d293a;
+}
+.first {
+  flex: 3;
+  text-align: center;
+}
+.second {
+  flex: 3;
+}
+.second a {
+  color: white;
+  margin-left: 5px;
+}
+.second i {
+  color: green;
+  margin-bottom: 5px;
+}
+.Third {
+  flex: 3;
+  text-align: center;
+  padding-top: 25px;
+}
+.My-img {
+  height: 100px;
+  border: 4px solid white;
+  border-radius: 50%;
+}
+.hedaer-hr {
+  color: white;
+}
+/* header code end */
+/* main section code start */
+main {
+  display: flex;
+  padding: 20px;
+  color: white;
+  font-size: 1.2rem;
+}
+main article {
+  flex: 5;
+}
+main aside {
+  flex: 5;
+}
+.item {
+  display: flex;
+  margin-bottom: 5px;
+}
+.item label {
+  flex: 0.5;
+}
+.item p {
+  flex: 0.5;
+}
+.skill-animation li {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  margin: 50px;
+  position: relative;
+}
+.skill-animation ul li::before {
+  content: "";
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0px;
+  background-color: #1d293a;
+  border-radius: 10px;
+  width: 100%;
+  height: 20px;
+}
+.skill-animation ul li::after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0px;
+  background-color: #00cf5d;
+  border-radius: 10px;
+  width: 0;
+  height: 20px;
+  animation-fill-mode: forwards;
+}
+/*html animation code  start*/
+.skill-animation ul li.html::after {
+  animation-name: html;
+}
+@keyframes html {
+  to {
+    width: 70%;
+  }
+}
+/* html animation code  end*/
+/*css animation code  start*/
+.skill-animation ul li.css::after {
+  animation-name: css;
+}
+@keyframes css {
+  to {
+    width: 60%;
+  }
+}
+/* css animation code  end*/
+/*boostrap animation code  start*/
+.skill-animation ul li.boostrap::after {
+  animation-name: boostrap;
+}
+@keyframes boostrap {
+  to {
+    width: 50%;
+  }
+}
+/* boostrap animation code  end*/
+/*github animation code  start*/
+.skill-animation ul li.github::after {
+  animation-name: github;
+}
+@keyframes github {
+  to {
+    width: 60%;
+  }
+}
+/* github animation code  end*/
+/* js animation code  start*/
+.skill-animation ul li.js::after {
+  animation-name: js;
+}
+@keyframes js {
+  to {
+    width: 40%;
+  }
+}
+/* js animation code  end*/
+/* main section code end */
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+  /* common code start */
+  #container {
+    width: 100%;
+  }
+
+  /* common code end */
+  /* hedaer code start */
+  header {
+    flex-direction: column;
+  }
+  .second {
+    margin-top: 20px;
+  }
+  /* hedaer code end */
+  /* main section code start */
+  main {
+    flex-direction: column;
+  }
+  /* main section code end */
+}
